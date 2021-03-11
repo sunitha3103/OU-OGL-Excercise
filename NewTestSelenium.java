@@ -40,7 +40,7 @@ public class NewTestSelenium {
 				ws.getRow(0).createCell(1).setCellValue("user landed in the Containers tab by default");
 			}
 			Thread.sleep(3000);
-			String loc=ws.getRow(i).createCell(0).getStringCellValue();
+			String loc=ws.getRow(i).createCell(1).getStringCellValue();
 			boolean flag=driver.findElement(By.xpath(loc)).isDisplayed();
 			Thread.sleep(5000);
 			if(flag!=true){
