@@ -37,7 +37,7 @@ public class NewTestSelenium {
 			expval="https://hub.docker.com/search?type=image";
 			acval=driver.getCurrentUrl();
 			if(expval.equals(acval)){
-				ws.getRow(0).createCell(1).setCellValue("user landed in the Containers tab by default");
+				ws.getRow(i).createCell(1).setCellValue("user landed in the Containers tab by default");
 			}
 			Thread.sleep(3000);
 			String loc=ws.getRow(i).createCell(1).getStringCellValue();
